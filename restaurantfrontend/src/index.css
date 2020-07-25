@@ -7,7 +7,7 @@
 }
 
 nav{
-    background: #ddd; 
+    background: #333; 
 }
 
 body{
@@ -26,7 +26,7 @@ form {
 
 label {
     padding-left: 10px;
-    color: #900;
+    
 }
 input[type="text"], 
 [type="email"], 
@@ -63,13 +63,13 @@ input[type="submit"]{
 .menu-container > h2 {
     text-align: center;
     font-size: 140%;
-    color: #900;
+  
 }
 
 .menu-container  h2 {
     text-align: center;
     font-size: 90%;
-    color: #900;
+   
 }
 
 .menu-container  p{
@@ -79,20 +79,21 @@ input[type="submit"]{
 
 
 .menu-container .card{
-    width: 15rem;
+    width: 18rem;
     margin-bottom: 20px;
 
 }
 
 .menu-container img{
     width: 100%;
+    
 }
 
 
 .second-row  h2{
     text-align: center;
     font-size: 90%;
-    color: #900;
+
 }
 
 .second-row  p{
@@ -102,9 +103,26 @@ input[type="submit"]{
 }
 
 .second-row .card{
-    width: 15rem;
+    width: 18rem;
   
 
+}
+
+/*footer*/
+
+#footer-section{
+    background: #222;
+    width: 100%;
+}
+.footer{
+    margin-top: 40px;  
+      
+}
+
+.footer h2{
+    text-align: center;
+    font-size: 100%;
+    padding-top: 30px;
 }
 
 @media (max-width: 990px) {

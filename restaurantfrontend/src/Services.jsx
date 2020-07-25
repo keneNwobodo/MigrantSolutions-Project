@@ -72,7 +72,7 @@ class Services extends Component {
         return ( 
             <div>
                 <form className="formSize" onSumbit={this.onSumbit}>
-                    <label>Enter Customer Name</label><br/>
+                    <label className="text-warning">Enter Customer Name</label><br/>
                     <select required className="form-control form-group" 
                      value={this.state.username} onChange={this.changedUsername}>
                          {this.state.customers.map(customer =>{
@@ -81,22 +81,22 @@ class Services extends Component {
 
                      </select>
 
-                     <label>Dish Ordered</label><br/>
+                     <label className="text-warning">Dish Ordered</label><br/>
                      <input type="text" className="form-group form-control" required
                      onChange={this.changedDish} value={this.state.dishOrdered}/>
 
-                     <label>Time Ordered</label><br/>
+                     <label className="text-warning">Time Ordered</label><br/>
                      <input type="text" onChange={this.changedTimeOFOrder} 
                      value={this.state.timeOrdered} className="form-control form-group"/>
                              
                      <div>
-                     <label>Date Ordered</label>
+                     <label className="text-warning">Date Ordered</label>
                          <DatePicker selected = {this.state.date} onChange={this.state.changedDate}
                          className="form-group form-control" />
                      </div>
 
                      <div>
-                        <input type="submit" className="btn btn-danger" value="Order"/>
+                        <input type="submit" className="btn btn-warning" value="Order"/>
                      </div>
                 </form>
             </div>

@@ -96,32 +96,32 @@ class Signup extends Component {
                             <h1 className="text-center">Register to Order your Food Today!</h1>
                             <form onSubmit={this.onSubmit}>
                             <div>
-                                <label>Username</label><br/>
+                                <label className="text-warning">Username</label><br/>
                                 <input type="text" placeholder="username" onChange={this.changedUsername} value={this.state.username} className="form-group form-control"/>
                             </div>
 
                             <div>
-                                <label>Full Name</label><br/>
+                                <label className="text-warning">Full Name</label><br/>
                                 <input type="text" placeholder="name" onChange={this.changedName} value={this.state.fullname} className="form-group form-control"/>
                             </div>
 
                             <div >
-                                <label>Email</label><br/>
+                                <label className="text-warning">Email</label><br/>
                                 <input type="email" placeholder="example@gmail.com" onChange={this.changedEmail} value={this.state.email} className="form-group form-control"/>
                             </div>
 
                             <div>
-                                <label>Password</label><br/>
+                                <label className="text-warning">Password</label><br/>
                                 <input type="password" placeholder="password" onChange={this.changedPassword} value={this.state.password} className="form-group form-control"/>
                             </div>
 
                             <div>
-                                <label>Address</label><br/>
+                                <label className="text-warning">Address</label><br/>
                                 <input type="text" placeholder="address" onChange={this.changedAddress} value={this.state.address} className="form-group form-control"/>
                             </div>
                             
                             <div>
-                                <input type="submit" className="btn btn-danger" value="Register" />
+                                <input type="submit" className="btn btn-warning" value="Register" />
                             </div>
 
 
