@@ -88,7 +88,7 @@ class Dishes extends Component {
                   <div className="card">
                     <img src="https://res.cloudinary.com/dtu2furcy/image/upload/v1595671163/migrant%20solutions%20project/Rectangle_56_ijynqv.png" className="card-img-top" alt="..."/>
                     <div className="card-body">
-                        <h2 className="text-warning">Caffe Americano</h2>
+                        <h2 className="text-warning">Coffe Americano</h2>
                         <p className="card-text">N1000</p>
                     </div>
                     </div>
@@ -105,6 +105,25 @@ class Dishes extends Component {
                   </div>
                 
                 </div>
+
+ <section id="dish-table-section">
+       <h2 className="text-center text-dark">Dashboard</h2>
+                            <table className="table">
+                                <thead className="thead-light">
+                                    <tr>
+                                            <th>Customer's Name</th>
+                                            <th>Dish Ordered</th>
+                                            <th>Time Ordered</th>
+                                            <th>Delivery Type</th>
+                                              
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    {this.dishKitchen()}
+                                </tbody>
+                            </table>
+            </section>
        
             <section id="footer-section">
                 <div className="container footer">

@@ -108,6 +108,25 @@ input[type="submit"]{
 
 }
 
+/*dish table css*/
+
+ #dish-table-section {
+    margin-top: 40px;
+
+} 
+
+table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table th, tr{
+    padding: 10px;
+    text-align: center;
+    font-size: 80%;
+}
+
+
 /*footer*/
 
 #footer-section{

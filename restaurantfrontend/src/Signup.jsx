@@ -79,7 +79,7 @@ class Signup extends Component {
             <div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-md-6" data-aod="fade-right">
                         <img src="https://res.cloudinary.com/dtu2furcy/image/upload/v1595628185/migrant%20solutions%20project/breakfast_dlvuw4.png" alt=""/>
                         </div>
 

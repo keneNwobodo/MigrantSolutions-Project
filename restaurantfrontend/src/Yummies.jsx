@@ -6,20 +6,21 @@ class Yummies extends Component {
         return ( 
             <div>
                 <table className="table">
-                    <thead className="thead-dark" >
+                    <thead className="thead-warning" >
                         <tr>
-        <td>{this.props.dish.username}</td>
-        <td>{this.props.dish.dishOrdered}</td>
-        <td>{this.props.dish.timeOrdered}</td>
-        <td>{this.props.dish.dateOrdered}</td>
+                            <td>{this.props.dish.username}</td>
+                            <td>{this.props.dish.dishOrdered}</td>
+                            <td>{this.props.dish.timeOrdered}</td>
+                            <td>{this.props.dish.deliveryType}</td>
+                            <td>{this.props.dish.date}</td>
                         </tr>
                     </thead>
                 </table>
 
                 <td>
-                    <a href="#" className="btn btn-danger" onClick={()=>{
+                    <button type="button" className="btn btn-warning" href="#" className="btn btn-danger" onClick={()=>{
                         this.props.deleteDish(this.props.dish._id)
-                    }}>Delete</a>
+                    }}>Delete</button>
                 </td>
             </div>
          );
