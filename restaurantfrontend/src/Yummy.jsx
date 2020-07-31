@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import './index.css';
 import axios from 'axios';
 import Yummies from './Yummies';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init(
+    {
+    offset: 300,
+    duration: 1000
+    }
+);
 
 class Dishes extends Component {
     constructor() {
@@ -38,10 +47,10 @@ class Dishes extends Component {
         return ( 
             <div>
                 <div className="container menu-container">
-                    <h2 className="text-warning">Explore Our Menu</h2>
+                    <h2 className="text-warning" data-aos="zoom-out">Explore Our Menu</h2>
                  <div className="row">
                   <div className="col-md-4">
-                  <div className="card">
+                  <div className="card" data-aos="fade-left">
                     <img src="https://res.cloudinary.com/dtu2furcy/image/upload/v1595671163/migrant%20solutions%20project/Rectangle_66_jey3p7.png" className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h2 className="text-warning">Irish COffe</h2>
@@ -51,7 +60,7 @@ class Dishes extends Component {
                   </div>
                   
                   <div className="col-md-4">
-                  <div className="card">
+                  <div className="card" data-aos="fade-left">
                     <img src="https://res.cloudinary.com/dtu2furcy/image/upload/v1595671163/migrant%20solutions%20project/Rectangle_52_1_k1ymhf.png" className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h2 className="text-warning">Yummy Yogo</h2>
@@ -75,7 +84,7 @@ class Dishes extends Component {
                
                  <div className="row second-row">
                   <div className="col-md-4">
-                  <div className="card">
+                  <div className="card" data-aos="fade-left">
                     <img src="https://res.cloudinary.com/dtu2furcy/image/upload/v1595671163/migrant%20solutions%20project/Rectangle_66_1_rqrbfh.png" className="card-img-top" alt="..."/>
                     <div className="card-body">
                         <h2 className="text-warning">San Coffee</h2>

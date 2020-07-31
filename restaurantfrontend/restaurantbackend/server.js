@@ -18,8 +18,8 @@ mongoose.connect(process.env.DATABASE_CONNECT, {useUnifiedTopology: true}, () =>
 
 app.use(express.json());
 app.use(cors());
-app.use('/dish', dishUrls);
-app.use('/customer', customerUrls);
+app.use('/api/dish', dishUrls);
+app.use('/api/customer', customerUrls);
 
 
 app.listen(6000, () => {

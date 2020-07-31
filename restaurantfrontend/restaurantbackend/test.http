@@ -1,9 +1,13 @@
-POST http://localhost:6000/dish/create http/1.1
+POST http://localhost:6000/api/customer/signup http/1.1
 Content-Type: application/json
 
 {
-    "username":"KeneNwobodo",
-    "dishOrdered":"yam and ofala",
-    "timeOrdered": "1245",
-    "deliveryType":"waybill"
+    "username":"Kbb66",
+    "fullname": "jamesjoe",
+    "password": "kkkkkk",
+    "email": "check@gmail.com",
+    "address": "55 sham road"
 }
+
+
+
